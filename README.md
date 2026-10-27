@@ -10,9 +10,9 @@
 
 **HashiStack** — Vault for secrets management, Consul for service mesh, Nomad for workload orchestration, Terraform for everything. Not just using these tools — running them in production on my own hardware, building the automation layer on top of them.
 
-**AI Infrastructure** — Self-hosted LLM inference with Ollama. RAG pipeline architecture (ChromaDB, embedding models). MCP (Model Context Protocol) server development. Production AI systems with confidence-tiered response engines. Local deployments for security-sensitive environments with full data sovereignty.
+**AI Infrastructure** — Self-hosted LLM inference with Ollama. RAG pipeline architecture (ChromaDB, embedding models). MCP (Model Context Protocol) server development. Confidence-tiered response engines in working RAG systems. Local deployments for security-sensitive environments with full data sovereignty.
 
-**Security Engineering** — eBPF/Tetragon for kernel-level process attribution. OPA/Rego for policy-as-code enforcement. Passive AI traffic governance (shadow AI detection, PII-in-prompt, token exfiltration signals). SplunkCloud deployments with automated compliance controls (PCI-DSS, HIPAA, SOX, SOC2).
+**Security Engineering** — eBPF/Tetragon for kernel-level process attribution. OPA/Rego for policy-as-code enforcement. Passive AI traffic governance — shadow AI detection, PII-in-prompt, token exfiltration signals — in design and active development. SplunkCloud deployments with automated compliance controls (PCI-DSS, HIPAA, SOX, SOC2).
 
 **Custom Tooling in Go** — Author of a custom Terraform provider for the Antsle hypervisor platform. 9 writable resource types, 15+ read-only data sources, full CRUD lifecycle. Most engineers use providers. I wrote one.
 
@@ -22,10 +22,10 @@
 
 | Project | What it is |
 |---------|-----------|
-| **INTERCEPT** | Passive network sensor — transparent proxy, 24-rule security scanner, eBPF/Tetragon process attribution, OPA/Rego behavioral enforcement. Self-hosted AI governance. |
+| **INTERCEPT** | *In design and active development.* Passive network sensor for self-hosted AI governance. Built so far: transparent mitmproxy capture, 24 passive detection rules, flow logging with API-surface mapping, FastAPI service, OpenAPI/HAR/Terraform exporters. In progress: eBPF/Tetragon process attribution, OPA/Rego policy generation, AI-traffic governance rules. |
 | **SOVEREIGN** | Self-hosted HashiStack control plane on Antsle bare metal. Packer → hardened AlmaLinux 9 images → custom Terraform provider → Vault + Consul + Nomad + Traefik. git push to production. |
 | **FULCRUM** | 15-agent multi-agent orchestration architecture. Cognitive profile-aware agent design. Claude API at depth. |
-| **SPECTER** | RAG system automating enterprise security questionnaires. Flask + ChromaDB + Ollama. 85%+ automatic completion rate. |
+| **SPECTER** | Working RAG system automating enterprise security questionnaires. Flask + ChromaDB + Ollama. 85%+ automatic completion rate. Built with a security executive at a financial services firm as design partner. |
 | **Custom Terraform Provider** | Full provider in Go using Terraform Plugin SDK. Available on request. |
 
 ---
